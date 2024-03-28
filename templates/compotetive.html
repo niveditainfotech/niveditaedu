@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %} | Compotetive exam {% endblock %}
+{% block content %}
+<ul>
+    <li>TNPSC</li>
+    <li>SSC</li>
+    <li>RRB</li>
+    <li>Banking</li>
+</ul>
+
+<div class="forms">
+    <form action="{% url 'forms' %}" method="post" autocomplete="off">{% csrf_token %}
+        <label for="name">Name *</label>
+        <input type="text" name="name" id="name" required>
+        <label for="mail">Email *</label>
+        <input type="email" name="email" id="mail">
+        <label for="phone">Phone *</label>
+        <input type="text" name="phone" id="phone">
+        <label for="place">Place *</label>
+        <input type="text" name="place" id="place">
+        <label for="course">Course *</label>
+        <select name="course" id="course" required>
+            <option value="">Select course *</option>
+            <option value="TNPSC Grp I">TNPSC Grp I</option>
+            <option value="TNPSC Grp II">TNPSC Grp II</option>
+            <option value="TNPSC Grp IV">TNPSC Grp IV</option>
+            <option value="SSC">SSC</option>
+            <option value="RRB">RRB</option>
+            <option value="Banking">Banking</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+            <div style="color: rgb(41, 206, 41);">{{message}}</div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

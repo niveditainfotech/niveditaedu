@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-l">
+            <h3>Logo</h3>
+        </div>
+        <div class="nav-r show">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'english' %}">Abroad Study</a></li>
+                <li><a href="{% url 'compo' %}">Competitive Exams</a></li>
+                <li><a href="{% url 'entrences' %}">Entrance Exams</a></li>
+                <li><a href="{% url 'abouts' %}">About Us</a></li>
+                <li><a href="{% url 'contacts' %}">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-bar">
+            <img src="./static/images/icons8-menu-bar-50.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

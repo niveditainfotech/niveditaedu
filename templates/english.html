@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %} | English Couching {% endblock %}
+{% block content %}
+<ul>
+    <li>Spoken english</li>
+    <li>IELTS</li>
+    <li>OET</li>
+    <li>GMAT</li>
+    <li>PTE</li>
+</ul>
+
+<div class="forms">
+    <form action="{% url 'forms' %}" method="post" autocomplete="off">{% csrf_token %}
+        <label for="name">Name *</label>
+        <input type="text" name="name" id="name" required>
+        <label for="mail">Email *</label>
+        <input type="email" name="email" id="mail">
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone">
+        <label for="place">Place</label>
+        <input type="text" name="place" id="place">
+        <label for="course">Course</label>
+        <select name="course" id="course" required>
+            <option value="">Select course *</option>
+            <option value="Spoken English">Spoken English</option>
+            <option value="IELTS">IELTS</option>
+            <option value="OET">OET</option>
+            <option value="GMAT">GMAT</option>
+            <option value="PTE">PTE</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+            <div style="color: rgb(41, 206, 41);">{{message}}</div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}
