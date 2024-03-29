@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">                                                                                   
+    <!-- <li>Spoken english</li>
+    <li>IELTS</li>
+    <li>OET</li>
+    <li>GMAT</li>
+    <li>PTE</li> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="english.css">
+</head>
+<body>
+    <div class="engmain">
+        <div class="engban-l">
+            <div class="bandiv">
+                <h2>Abroad Studies</h2>
+                <h4>&</h4>
+                <h3>Spoken English</h3>
+            </div>
+            <p class="p1">Confidence in spoken English is not just a skill</p>
+            <p class="p2">it's a passport to success in the global arena</p>
+        </div>        
+    </div>
+    <div class="engsec2">
+        <h2 class="engh2">Spoken English</h2>
+        <div class="engcon">
+            <div class="sec2-l">
+                <div class="deform">
+                    <h3>Regisration details</h3>
+                    <form action="{% url 'forms' %}" method="post" autocomplete="off">
+                        <!-- {% csrf_token %} -->
+                        <label for="name">Name *</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="mail">Email *</label>
+                        <input type="email" name="email" id="mail" required>
+                        <label for="phone">Phone *</label>
+                        <input type="text" name="phone" id="phone" required>
+                        <label for="place">Place *</label>
+                        <input type="text" name="place" id="place" required>
+                        <label for="course">Course *</label>
+                        <select class="ops" name="course" id="course" required>
+                            <option value="">Select course</option>
+                            <option value="Spoken English">Spoken English</option>
+                            <option value="IELTS">IELTS</option>
+                            <option value="OET">OET</option>
+                            <option value="GMAT">GMAT</option>
+                            <option value="PTE">PTE</option>
+                        </select>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <!-- {% if messages %}
+                        {% for message in messages %}
+                            <div style="color: rgb(41, 206, 41);">{{message}}</div>
+                        {% endfor %}
+                    {% endif %} -->
+                </div>
+            </div>
+            <div class="sec2-r">
+                <div class="engcon2">
+                    <h3>Unlock Your Potential with Nivedita Academy's Spoken English Coaching in Trichy!</h3>
+                    <ul>
+                        <li>Are you ready to take your communication skills to the next level? Look no further! Nivedita Academy is proud to be the No.1 choice for Spoken English Coaching in Trichy</li>
+                        <li>Whether you're a beginner or looking to enhance your existing skills, our experienced instructors are here to guide you every step of the way.</li>
+                    </ul>
+                    <a href="tel://8220258974"><button>Take a free demo</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
