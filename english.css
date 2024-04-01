@@ -183,3 +183,71 @@
     background-color: black;
     color: white;
 }
+
+.engsec3{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("./static/images/v915-wit-002.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.sec3-l,.sec3-r{
+    width: 50%;
+    
+}
+
+.sec3div1{
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 10px;
+    margin: auto 30px;
+    min-height: 80%;
+    line-height: 2;
+}
+
+.sec3div1 h4{
+    color: rgb(87, 155, 175);
+}
+
+.sec3div1 h3{
+    margin-top: 20px;
+    color: rgb(55, 174, 211);
+}
+
+.sec3div2{
+    line-height: 3.5;
+}
+
+
+.engrid{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7%;
+    flex-wrap: wrap;
+}
+
+.engrid img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.engrid p{
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 10px;
+    width: 40%;
+    margin: 30px 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="english.css">
 </head>
 <body>
-    <div class="engmain">
+    <!-- <div class="engmain">
         <div class="engban-l">
             <div class="bandiv">
                 <h2>Abroad Studies</h2>
@@ -31,7 +31,7 @@
                 <div class="deform">
                     <h3>Regisration details</h3>
                     <form action="{% url 'forms' %}" method="post" autocomplete="off">
-                        <!-- {% csrf_token %} -->
+                        {% csrf_token %}
                         <label for="name">Name *</label>
                         <input type="text" name="name" id="name" required>
                         <label for="mail">Email *</label>
@@ -51,11 +51,11 @@
                         </select>
                         <button type="submit">Submit</button>
                     </form>
-                    <!-- {% if messages %}
+                    {% if messages %}
                         {% for message in messages %}
                             <div style="color: rgb(41, 206, 41);">{{message}}</div>
                         {% endfor %}
-                    {% endif %} -->
+                    {% endif %}
                 </div>
             </div>
             <div class="sec2-r">
@@ -69,6 +69,37 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+
+    <div class="engsec3">
+        <div class="sec3-l">
+            <div class="sec3div1 sec3div2">
+                <h3>Why Choose Nivedita Academy ?</h3>
+                <ul>
+                    <li>Experienced Instructors</li>
+                    <li>Fluency Improvement</li>
+                    <li>Convenient & Flexible Timings</li>
+                    <li>Confidence Building</li>
+                    <li>Practical Approach</li>
+                    <li>Alumni Support</li>                    
+                </ul>
+            </div>
+        </div>
+        documents.pythonplatform@gmail.com
+        <div class="sec3-r">
+            <div class="sec3div1">
+                <h3>Get complete coaching for spoken English with us.</h3>
+                <h4>We provide Practical training for</h4>
+                <div class="engrid">
+                    <p><img src="./static/images/reading_8896509.png" alt="">Reading</p>
+                    <p><img src="./static/images/letter_1027530.png" alt="">Writing</p>
+                    <p><img src="./static/images/listening_9145462.png" alt="">Listening</p>
+                    <p><img src="./static/images/speaking_426426.png" alt="">Speaking</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    
 </body>
 </html>
