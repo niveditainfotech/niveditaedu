@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --dark: #27374D;
@@ -124,4 +125,76 @@
 .minbox2 img{
     width: 40px;
     color: white;
+}
+
+
+.hsec3{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    height: 80vh;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.sec3up{
+    position: relative;
+    top: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.sec3up h1{
+    flex: 1;
+    position: relative;
+    left: 5%;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.sec3up h1 span{
+    border-bottom: 3px solid var(--gray);
+    color: var(--light);
+}
+
+.sec3up p{
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.sec3dn{
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.db1{
+    width: 25%;
+}
+
+.db11{
+    color: rgb(252, 252, 65);
+}
+.db12{
+    color: rgb(231, 37, 205);
+}
+
+.db1 p{
+    line-height: 1.4;
+    letter-spacing: .9px;
+    font-size: 14px;
+}
+
+#dnspan1{
+    color: rgb(143, 216, 33);
+}
+
+#dnspan2{
+    color: rgb(206, 61, 4);
 }
