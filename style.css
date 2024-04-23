@@ -164,6 +164,8 @@
     flex: 1;
     font-size: 14px;
     line-height: 1.4;
+    text-align: justify;
+    padding-right: 45px;
 }
 
 .sec3dn{
@@ -197,4 +199,53 @@
 
 #dnspan2{
     color: rgb(206, 61, 4);
+}
+
+.hsec4{
+    height: 100vh;
+    width: 100vw;
+}
+
+.hsec5{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.qusl img{
+    width: 500px;
+}
+
+.qusr{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.qusr h2{
+    margin: 20px 0;
+    color: var(--gray);
+}
+
+.qusr p{
+    margin-bottom: 20px;
+    position: relative;
+    left: 5%;
+    line-height: 1.5;
+}
+
+.chhos1{
+    position: relative;
+    left: 10%;
+    line-height: 1.7;
+}
+
+.chhos1 ul li{
+    list-style: none;
+}
+.fa-arrow-right{
+    color: var(--dark);
 }
