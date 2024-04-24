@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    cursor: url("./static/images/pencil.png"),auto;
+    cursor: url("./static/images/pencil.png"),aut;
 }
 
 ::selection{
@@ -32,13 +32,14 @@
     background: var(--gray);
 }
 
-
 :root{
     --dark: #27374D;
     --gray: #526D82;
     --lgray: #9DB2BF;
     --light: #DDE6ED;
 }
+
+
 .hsec1{
     position: relative;
     width: 99vw;
@@ -363,3 +364,4 @@ hr{
 .form-group-home button:hover{
     border: 1px solid var(--light);
 }
+
