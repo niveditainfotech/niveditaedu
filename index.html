@@ -12,8 +12,8 @@
         <div class="hsecb1">
             <h1>Nivedita Academy</h1>
             <p>Evolution in <span>Education</span></p>
-            <a href="#"><button class="bts1">Enroll Now</button></a>
-            <a href="#"><button class="bts2">Call Now</button></a>            
+            <a href="#hsec4"><button class="bts1">Enroll Now</button></a>
+            <a href="tel://8754002475"><button class="bts2">Call Now</button></a>            
         </div>
         <div class="hsecb2">
             <img src="./static/images/pngwing.com.png" alt="">
@@ -64,7 +64,59 @@
             </div>
         </div>
     </div>
-<div class="hsec4"></div>
+<div class="hsec4" id="hsec4">
+    <div class="hform">
+        <form action="{% url 'forms' %}" method="post" autocomplete="off">
+            <!-- {% csrf_token %} -->
+            <div class="formdiv1">
+                <div class="form-group-home">
+                    <label for="name">Name *</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group-home">
+                    <label for="mail">Email *</label><br>
+                    <input type="email" name="email" id="mail" placeholder="Enter your mail I'd" required>
+                </div>
+
+                <div class="form-group-home">
+                    <label for="phone">Phone *</label><br>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+            <hr>
+            <div class="formdiv1 line1">
+                <div class="form-group-home">
+                    <label for="place">Place *</label><br>
+                    <input type="text" name="place" id="place" placeholder="Enter your location" required>
+                </div>
+                
+                <div class="form-group-home">
+                    
+                    <select class="ops" name="course" id="course" required>
+                        <option value="">Select course</option>
+                        <option value="Spoken English">Spoken English</option>
+                        <option value="IELTS">IELTS</option>
+                        <option value="OET">OET</option>
+                        <option value="GMAT">GMAT</option>
+                        <option value="PTE">PTE</option>
+                        <option value="TNPSC">TNPSC</option>
+                        <option value="SSC">SSC</option>
+                        <option value="RRB">RRB</option>
+                        <option value="Banking">Banking</option>
+                        <option value="CAT">CAT</option>
+                        <option value="MAT">MAT</option>
+                        <option value="TANCET">TANCET</option>
+                        <option value="GRE">GRE</option>
+                    </select>
+                </div>
+                <div class="form-group-home">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
     
 
     <div class="hsec3">
