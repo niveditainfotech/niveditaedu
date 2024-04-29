@@ -105,6 +105,7 @@
 .addr-1{
     display: flex;
     margin: 10px;
+    letter-spacing: 1px;
 }
 
 .addr-1 p{
