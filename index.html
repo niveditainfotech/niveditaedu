@@ -171,5 +171,28 @@
             </div>
         </div>
     </div>
+    <div class="review">
+        <div class="rform">
+            <form action="" method="post" autocomplete="off">
+                <div class="divr-l">
+                    <label for="rname">Name</label>
+                    <input type="text" id="rname" name="rname" placeholder="Enter your name" required>
+
+                    <label for="remail">Email</label>
+                    <input type="email" name="remail" id="remail" placeholder="Enter your mail address" required>
+                </div>
+
+                <div class="divr-r">
+                    <label for="comments">Your comments</label>
+                    <textarea name="comments" id="comments" cols="20" rows="10" placeholder="Share Your Comments" required></textarea>
+
+                    <label for="rate">Ratings out of 10</label>
+                    <input type="number" max="10" maxlength="2" id="rate" name="rate" placeholder="Give ratings out of 10" required>
+
+                    <button type="submit">Submit Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
