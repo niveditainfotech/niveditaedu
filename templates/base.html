@@ -7,23 +7,53 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <div class="navbar">
-        <div class="nav-r">
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'english' %}">Abroad Study</a></li>
-                <li><a href="{% url 'compo' %}">Competitive Exams</a></li>
-                <li><a href="{% url 'entrences' %}">Entrance Exams</a></li>
-                <li><a href="{% url 'abouts' %}">About Us</a></li>
-                <li><a href="{% url 'contacts' %}">Contact</a></li>
-            </ul>
-        </div>
-        <div class="nav-l">
-            <h3>Logo</h3>
-        </div>
-    </div>
+    <nav>
+        <ul class="side-bar">
+            <li onclick=show()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'english' %}">Abroad Study</a></li>
+            <li><a href="{% url 'compo' %}">Competitive Exams</a></li>
+            <li><a href="{% url 'entrences' %}">Entrance Exams</a></li>
+            <li><a href="{% url 'abouts' %}">About Us</a></li>
+            <li><a href="{% url 'contacts' %}">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'english' %}">Abroad Study</a></li>
+            <li><a href="{% url 'compo' %}">Competitive Exams</a></li>
+            <li><a href="{% url 'entrences' %}">Entrance Exams</a></li>
+            <li><a href="{% url 'abouts' %}">About Us</a></li>
+            <li><a href="{% url 'contacts' %}">Contact</a></li>
+            <li class="mnav" onclick=sidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
     {% block content %}
     {% endblock %}
-
+    <div class="basecon">
+        <div class="basecon1">
+            <h2>Nivedita Academy</h2>
+            <p>29-B, Rohans Arcade, Third floor, <br> Thillai Nagar Main Road <br>(Oppt. to HP Petrol Bunk),Trichy-18</p>
+            <p><b>Phone:</b><a href="tel://8754002473">+91 8754002473 </a> / <a href="tel://8754002475">+91 8754002475</a></p>
+            <div class="basemail">
+                <p><b>Mail:</b></p>
+                <div>                    
+                    <a href="mailto://centrehead@niveditaedu.info">centrehead@niveditaedu.info</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <h2>Social Contact</h2>
+            <div class="somenu">
+                <a href="wa.me://"><img src="./static/images/icons8-whatsapp-750.png" alt="Whatsapp"></a>
+                <a href=""><img src="./static/images/icons8-instagram-750.png" alt="Instagram"></a>
+                <a href=""><img src="./static/images/icons8-linkedin-750.png" alt="Linkedin"></a>
+                <a href=""><img src="./static/images/icons8-youtube-750.png" alt="Youtube"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Developed and Maintained by <b><a href="//niveditainfotech.com" target="_blank">Nivedita Infotech</a></b></p>
+    </footer>
+    <script src="{% static 'script.js' %}"></script>
 </body>
 </html>

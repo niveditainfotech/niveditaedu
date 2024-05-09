@@ -1,9 +1,228 @@
 {% extends 'base.html' %}
+
+{% block title %} | Home {% endblock %}
+
 {% block content %}
-<h1>Home</h1>
-{% if messages %}
+<div class="hsec1">
+    <div class="hsecb1">
+        <h1>Nivedita Academy</h1>
+        <p>Evolution in <span>Education</span></p>
+        <a href="#hsec4"><button class="bts1">Enroll Now</button></a>
+        <a href="tel://8754002475"><button class="bts2">Call Now</button></a>            
+    </div>
+    <div class="hsecb2">
+        <img src="./static/images/pngwing.com.png" alt="">
+        <h1>Make Your Future <span>Bright</span></h1>            
+    </div>
+</div>
+
+<div class="course">
+   <div class="cor">
+        <div class="cor1">
+            <div>
+                <h3>English</h3>
+            </div>
+            <ul>
+                <li><i class="fa fa-angle-double-right"></i> SPOKEN ENGLISH</li>
+                <li><i class="fa fa-angle-double-right"></i> IELTS</li>
+                <li><i class="fa fa-angle-double-right"></i> OET</li>
+                <li><i class="fa fa-angle-double-right"></i> GMAT</li>
+                <li><i class="fa fa-angle-double-right"></i> PTE</li>
+            </ul>
+        </div>
+        <div class="cor1">
+            <div>
+                <h3>Entrence</h3>
+            </div>
+            <ul><li><i class="fa fa-angle-double-right"></i> NEET</li>
+                <li><i class="fa fa-angle-double-right"></i> GATE</li>
+                <li><i class="fa fa-angle-double-right"></i> CAT</li>
+                <li><i class="fa fa-angle-double-right"></i> MAT</li>
+                <li><i class="fa fa-angle-double-right"></i> TANCET</li>
+                <li><i class="fa fa-angle-double-right"></i> GRE</li>
+            </ul>
+        </div>
+   </div>
+    <div class="cor">
+        <div class="cor1">
+            <div>
+                <h3>Compotetive</h3>
+            </div>
+            <ul>
+                <li><i class="fa fa-angle-double-right"></i> TNPSC</li>
+                <li><i class="fa fa-angle-double-right"></i> SSC</li>
+                <li><i class="fa fa-angle-double-right"></i> RRB</li>
+                <li><i class="fa fa-angle-double-right"></i> Banking</li>
+            </ul>
+        </div>
+        <div class="cor1">
+            <div>
+                <h3>Programming Courses</h3>
+            </div>
+            <div class="cor-list">
+                <ul>
+                    <li><i class="fa fa-angle-double-right"></i> Python</li>
+                    <li><i class="fa fa-angle-double-right"></i> Java</li>
+                    <li><i class="fa fa-angle-double-right"></i> Dart</li>
+                    <li><i class="fa fa-angle-double-right"></i> Flutter</li>
+                </ul>
+                <hr class="cor-line">
+                <ul>
+                    <li><i class="fa fa-angle-double-right"></i> Python Full Stack</li>
+                    <li><i class="fa fa-angle-double-right"></i> Java Full Stack</li>
+                    <li><i class="fa fa-angle-double-right"></i> MERN Full Stack</li>
+                    <li><i class="fa fa-angle-double-right"></i> MEAN Full Stack</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="minisec">
+    <div class="minbox1">
+        <div class="minbox2">
+            <img src="./static/images/cap.png" alt="">                
+        </div>
+        <div class="minbox2b">
+            <p class="minp1">POWERFUL LEARNING</p>
+            <p class="minp2">Outstanding features for highly customizable Courses, Units, Lessons, and Quizzes.</p>
+        </div>
+        
+    </div>
+    <div class="minbox1">
+        <div class="minbox2">
+            <img src="./static/images/like.png" alt="">                
+        </div>
+        <div class="minbox2b">
+            <p class="minp1">EFFORTLESS MANAGE COURSES</p>
+            <p class="minp2">User-friendly Course Management Powered by Masterstudy LMS Plugin</p>
+        </div>
+    </div>
+    <div class="minbox1">
+        <div class="minbox2">
+            <img src="./static/images/settings.png" alt="">                
+        </div>
+        <div class="minbox2b">
+            <p class="minp1">EASILY SELL COURSES ONLINE</p>
+            <p class="minp2">Enjoy the flexibility of education WordPress theme and easily manage online sales.</p>
+        </div>
+    </div>
+    <div class="minbox1">
+        <div class="minbox2">
+            <img src="./static/images/mobile.png" class="some" alt="">               
+        </div>
+        <div class="minbox2b">
+            <p class="minp1">24/7 PROFESSIONAL SUPPORT</p>
+            <p class="minp2">We care about our customers and provide free 24/7 support. Ask your questions via Ticket System.</p>
+        </div>
+    </div>
+</div>
+<div class="hsec4" id="hsec4">
+<div class="hform">
+    <form action="{% url 'forms' %}" method="post" autocomplete="off">
+        {% csrf_token %}
+        <div class="formdiv1">
+            <div class="form-group-home">
+                <label for="name">Name *</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group-home">
+                <label for="mail">Email *</label><br>
+                <input type="email" name="email" id="mail" placeholder="Enter your mail I'd" required>
+            </div>
+
+            <div class="form-group-home">
+                <label for="phone">Phone *</label><br>
+                <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+            </div>
+        </div>
+        <hr>
+        <div class="formdiv1 line1">
+            <div class="form-group-home">
+                <label for="place">Place *</label><br>
+                <input type="text" name="place" id="place" placeholder="Enter your location" required>
+            </div> 
+            
+            <div class="form-group-home">
+                
+                <select class="ops" name="course" id="course" required>
+                    <option value="">Select course</option>
+                    <option value="Spoken English">Spoken English</option>
+                    <option value="IELTS">IELTS</option>
+                    <option value="OET">OET</option>
+                    <option value="GMAT">GMAT</option>
+                    <option value="PTE">PTE</option>
+                    <option value="TNPSC">TNPSC</option>
+                    <option value="SSC">SSC</option>
+                    <option value="RRB">RRB</option>
+                    <option value="Banking">Banking</option>
+                    <option value="CAT">CAT</option>
+                    <option value="MAT">MAT</option>
+                    <option value="TANCET">TANCET</option>
+                    <option value="GRE">GRE</option>
+                </select>
+            </div>
+            <div class="form-group-home">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    {% if messages %}
         {% for message in messages %}
             <div style="color: rgb(41, 206, 41);">{{message}}</div>
         {% endfor %}
-{% endif %}
+    {% endif %}
+</div>
+</div>
+
+
+<div class="hsec3">
+    <div class="sec3up">
+        <h1><span>Nivedita Academy</span> is the best<br>choice for everyone!</h1>
+        <p>Welcome to Nivedita Academy, your trusted partner in achieving your dream. ultimate resourse hub for aspring students to unlock their potential to achieve their professional goals. our dedicated platform designed to empower aspirants like you to excel in your life. Our courses are designed to cater to all levels of proficiency. Take the first step towards your success with Nivedita Academy.</p>
+    </div>
+    <div class="sec3dn">
+        <div class="db1">
+            <h3 class="db11">Higher education</h3><br>
+            <p>Implement the top-notch learning technology of LMS and create a perfect workflow within any educational institution</p>
+        </div>
+        <div class="db1">
+            <h3 class="db12">Individual instructors</h3><br>
+            <p>Deliver skills and knowledge online to thousands of students and create a productive learning environment</p>
+        </div>
+        <div class="db1">
+            <h3><span id="dnspan1">Online / </span><span id="dnspan2">Offline </span>Platforms</h3><br>
+            <p>Build a universal online learning platform for everyone and provide an exceptional experience.</p>
+        </div>
+    </div>
+</div>
+<div class="hsec5">
+    <div class="qusl">
+        <img src="./static/images/question.jpg" alt="why we choice nivedita academy">
+    </div>
+    <div class="qusr">
+        <h2>Why Choose Nivedita Academy?</h2>
+        <div class="chhos1">
+            <ul>
+                <li><i class="fa fa-arrow-right"></i> Experienced Instructors</li>
+                <li><i class="fa fa-arrow-right"></i> Knowledge and Skill Improvement</li>
+                <li><i class="fa fa-arrow-right"></i> Convenient & Flexible Timings</li>
+                <li><i class="fa fa-arrow-right"></i> Confidence Building</li>
+                <li><i class="fa fa-arrow-right"></i> Practical Approach</li>
+            </ul>
+        </div>
+        <h2>Core Features</h2>
+        <p>Our flexible programs are designed to fit into your life, including day, evening & weekend <br> classes We welcome everyone - regardless of background or circumstances. Come as <br>you are and we'll help you get where you want to go.</p>
+        <div class="chhos1">
+            <ul>
+                <li><i class="fa fa-arrow-right"></i> Customized Curriculum</li>
+                <li><i class="fa fa-arrow-right"></i> Comprehensive Study Material</li>
+                <li><i class="fa fa-arrow-right"></i> Supportive Learning Environment</li>
+                <li><i class="fa fa-arrow-right"></i> A low student-to-instructor ratio </li>
+            </ul>
+        </div>
+    </div>
+</div>
 {% endblock %}
