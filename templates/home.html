@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %} | Home {% endblock %}
 
 {% block content %}
@@ -11,7 +13,7 @@
         <a href="tel://8754002475"><button class="bts2">Call Now</button></a>            
     </div>
     <div class="hsecb2">
-        <img src="./static/images/pngwing.com.png" alt="">
+        <img src="{% static 'images/pngwing.com.png' %}" alt="">
         <h1>Make Your Future <span>Bright</span></h1>            
     </div>
 </div>
@@ -82,7 +84,7 @@
 <div class="minisec">
     <div class="minbox1">
         <div class="minbox2">
-            <img src="./static/images/cap.png" alt="">                
+            <img src="{% static 'images/cap.png' %}" alt="">                
         </div>
         <div class="minbox2b">
             <p class="minp1">POWERFUL LEARNING</p>
@@ -92,7 +94,7 @@
     </div>
     <div class="minbox1">
         <div class="minbox2">
-            <img src="./static/images/like.png" alt="">                
+            <img src="{% static 'images/like.png' %}" alt="">                
         </div>
         <div class="minbox2b">
             <p class="minp1">EFFORTLESS MANAGE COURSES</p>
@@ -101,7 +103,7 @@
     </div>
     <div class="minbox1">
         <div class="minbox2">
-            <img src="./static/images/settings.png" alt="">                
+            <img src="{% static 'images/settings.png' %}" alt="">                
         </div>
         <div class="minbox2b">
             <p class="minp1">EASILY SELL COURSES ONLINE</p>
@@ -110,7 +112,7 @@
     </div>
     <div class="minbox1">
         <div class="minbox2">
-            <img src="./static/images/mobile.png" class="some" alt="">               
+            <img src="{% static 'images/mobile.png' %}" class="some" alt="">               
         </div>
         <div class="minbox2b">
             <p class="minp1">24/7 PROFESSIONAL SUPPORT</p>
@@ -200,7 +202,7 @@
 </div>
 <div class="hsec5">
     <div class="qusl">
-        <img src="./static/images/question.jpg" alt="why we choice nivedita academy">
+        <img src="{% static 'images/question.jpg' %}" alt="why we choice nivedita academy">
     </div>
     <div class="qusr">
         <h2>Why Choose Nivedita Academy?</h2>

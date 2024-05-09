@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    cursor: url("./static/images/pencil.png"),aut;
+    cursor: url("images/pencil.png"),auto;
 }
 
 ::selection{
@@ -207,7 +207,7 @@ nav li:first-child{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url("./static/images/bgs3.jpg");
+    background-image: url("images/bgs3.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -439,7 +439,7 @@ nav li:first-child{
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
-    background-image: url("./static/images/Untitled\ design\ \(1\)\ \(1\).png");
+    background-image: url("images/max.png");
     background-position: center;
     background-size: 2250px;
 }
@@ -529,7 +529,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./static/images/pexels-ryutaro-tsukata-6249230.jpg");
+    background-image: url("images/pexels-ryutaro-tsukata-6249230.jpg");
     background-position: center;
     background-size: cover;
 }
