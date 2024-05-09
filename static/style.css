@@ -66,7 +66,8 @@
     opacity: 0;
     transform: translateY(-30%);
     animation: anime2 linear forwards;
-    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes anime2 {
@@ -192,7 +193,7 @@ nav li:first-child{
     font-weight: 400;
     color: goldenrod;
     transition: .5s;
-    animation-delay: .4s;
+    animation-delay: 2.4s;
 }
 
 .hsecb1 p{
@@ -201,7 +202,7 @@ nav li:first-child{
     color: var(--dark);
     font-weight: 600;
     font-size: 2em;
-    animation-delay: .6s;
+    animation-delay: 2.6s;
 }
 
 .hsecb1 button{
@@ -214,7 +215,7 @@ nav li:first-child{
     font-weight: 600;
     font-size: 16px;
     transition: .5s;
-    animation-delay: .7s;
+    animation-delay: 2.7s;
 }
 
 .bts1{
@@ -233,7 +234,7 @@ nav li:first-child{
     transition: 2s;
     width: 300px;
     margin: 1% 40px 40px;
-    animation-delay: 1s;
+    animation-delay: 2.5s;
 }
 
 .slider{
@@ -245,7 +246,7 @@ nav li:first-child{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    animation-delay: .9s;
+    animation-delay: 2.9s;
 }
 
 .slides{
@@ -788,3 +789,50 @@ footer p,a{
 }
 
 /* ----------------- */
+
+
+.preload{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gray);
+    z-index: 10;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    transition: 500ms ease;
+}
+
+
+.preload.loaded{
+    transition-delay: 250ms;
+    transform: translateY(100%);
+}
+
+
+.preload .text{
+    background-image: url("../static/images/bcakround.jpg");
+    background-size: 500%;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    padding-inline-start: 16px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    animation: loadingText linear 3s infinite;
+}
+
+@keyframes loadingText{
+    0%{
+        background-position: 100%;
+    }   
+    100%{
+        background-position: 0%;
+    }
+}
