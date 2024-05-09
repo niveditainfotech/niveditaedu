@@ -39,6 +39,47 @@
     --light: #DDE6ED;
 }
 
+/* ------------- */
+
+/* Animation */
+
+
+.anime{
+    opacity: 0;
+    transform: translateY(30%);
+    animation: timers linear forwards;
+    animation-duration: 1.5s;
+}
+
+@keyframes timers {
+    50%{
+        opacity: 0.5;
+        transform: translateY(15%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }    
+}
+
+.anime2{
+    opacity: 0;
+    transform: translateY(-30%);
+    animation: anime2 linear forwards;
+    animation-duration: 1.5s;
+}
+
+@keyframes anime2 {
+    50%{
+        opacity: 0.5;
+        transform: translateY(-15%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* --------------- */
 
 /* Nav bar */
@@ -151,6 +192,7 @@ nav li:first-child{
     font-weight: 400;
     color: goldenrod;
     transition: .5s;
+    animation-delay: .4s;
 }
 
 .hsecb1 p{
@@ -159,6 +201,7 @@ nav li:first-child{
     color: var(--dark);
     font-weight: 600;
     font-size: 2em;
+    animation-delay: .6s;
 }
 
 .hsecb1 button{
@@ -171,6 +214,7 @@ nav li:first-child{
     font-weight: 600;
     font-size: 16px;
     transition: .5s;
+    animation-delay: .7s;
 }
 
 .bts1{
@@ -189,6 +233,7 @@ nav li:first-child{
     transition: 2s;
     width: 300px;
     margin: 1% 40px 40px;
+    animation-delay: 1s;
 }
 
 .slider{
@@ -200,6 +245,7 @@ nav li:first-child{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    animation-delay: .9s;
 }
 
 .slides{
