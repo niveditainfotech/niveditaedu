@@ -183,29 +183,51 @@ nav li:first-child{
     color: var(--light);
 }
 
-.hsecb2{
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.hsecb2 span{
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 10px;
-    border-radius: 5px;
-}
 
 .hsecb2 img{
     transition: 2s;
     width: 300px;
-    margin: 10% 40px 40px;
+    margin: 1% 40px 40px;
 }
 
+.slider{
+    font-size: 20px;
+    line-height: 2;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slides{
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--light);
+    margin-left: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+}
+
+.slides div{
+    border-radius: 10px;
+    background-color: var(--dark);
+    margin: 20px 0;
+    text-align: center;
+}
+
+@keyframes slider{
+    0%{margin-top: -300px;}
+    5%{margin-top: -200px;}
+    30%{margin-top: -200px;}
+    35%{margin-top: 0px;}
+    65%{margin-top: 0px;}
+    70%{margin-top: 200px;}
+    100%{margin-top: 200px;}
+}
 
 .course{
     width: 99vw;
