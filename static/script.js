@@ -13,7 +13,7 @@ function show(){
 
 let preloader=document.querySelector("[data-preaload]")
 
-setTimeout(loader,2000)
+window.addEventListener("load",loader)
 
 function loader(){
     preloader.classList.add("loaded")
