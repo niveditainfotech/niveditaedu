@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --dark: #27374D;
+    --gray: #526D82;
+    --lgray: #9DB2BF;
+    --light: #DDE6ED;
+}
+
+.cat0{
+    width: 99vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./static/images/cat.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.catline{
+    width: 100%;
+    margin: 2px auto;
+    transform: rotate(90deg);
+    position: relative;
+    left: 60%;
+}
+
+.cat0 h1{
+    font-size: 42px;
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.cat0 ul{
+    color: white;
+    font-size: 42px;
+}
+
+.cat0 ul li{
+    list-style: none;
+    position: relative;
+    line-height: 1.5;
+    left: 3%;
+    margin: 20px;
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+.catanime1{
+    animation: catShow .5s linear forwards;
+}
+
+.cat0 ul li:nth-child(1){
+    animation-delay: .5s;
+}
+.cat0 ul li:nth-child(2){
+    animation-delay: .8s;
+}
+.cat0 ul li:nth-child(3){
+    animation-delay: 1s;
+}
+.cat0 ul li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+@keyframes catShow {
+    100%{        
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.catanime2{
+    tr
+}
