@@ -78,6 +78,254 @@
     }
 }
 
-.catanime2{
-    tr
+/* --------------- */
+
+
+/* CAT */
+
+
+.cat1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    height: 30vh;
+    width: 93vw;
+    margin-bottom: 80px;
+    
 }
+
+.cat1 h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.cat-para{    
+    padding: 2%;
+    border-radius: 10px;
+    background-color: var(--light);
+}
+.cat-para h2{
+    margin: 10px auto;
+    color: var(--dark);
+
+}
+.cat-para p{
+    text-align: justify;
+    text-indent: 5%;
+    line-height: 1.5;
+}
+
+.cat2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 99vw;
+    margin-bottom: 80px;
+}
+
+.cat-why{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.cat-why h2{
+    color: var(--dark);
+    margin: 10px auto;
+}
+
+.cat-why ul{
+    margin: 10px auto;
+    line-height: 2;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.cat-why ul i{
+    color: var(--dark);
+}
+
+.cat-why0{
+    margin: 10px auto;
+    padding: 13px;
+    background-color: var(--light);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.cat-why0 span{
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.cat-why1{
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.cat-why1 p:first-child{
+    margin-bottom: 2.5%;
+    text-indent: 3%;
+}
+
+.cat-why1 p:last-child{
+    text-indent: 3%;
+}
+
+/* --------------- */
+
+/* MAT */
+
+
+.mat0{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    margin-top: 3%;
+}
+
+.mat0 h1{
+    text-align: center;
+    color: var(--dark);
+    margin-top: 10px;
+}
+
+.what-mat{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--light);
+}
+
+.what-mat h2{
+    margin: 10px;
+    color: var(--dark);
+}
+
+.what-mat p{
+    text-indent: 3%;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.def-mat{
+    display: flex;
+    flex-direction: column;
+}
+
+.def-mat h2{
+    margin-left: 20px;
+    color: var(--dark);
+}
+
+.mat-p1{
+    margin: 20px;
+    line-height: 1.5;
+    text-indent: 3%;
+}
+
+.mat-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mat-div1 p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.mat-div1 ul{
+    margin-left: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.mat-div2{
+    width: 90%;
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.mat-div2 p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.mat-div2 ul{
+    line-height: 1.5;
+    font-size: 17px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* ------------------ */
+
+
+/* TANCET */
+
+.tancet{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+}
+
+.tancet h1{
+    text-align: center;
+    color: var(--dark);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tan-def{
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--light);
+    line-height: 1.5;
+    box-shadow: 0 0 8px var(--light);
+}
+
+.tan-def h2{
+    color: var(--dark);
+}
+
+.tan-def p{
+    text-indent: 3%;
+}
+
+.tancet-list ul{
+    margin: 0 80px 40px;
+    line-height: 1.5;
+}
+
+.tancet-list ul li{
+    margin: 10px 0;
+}
+
