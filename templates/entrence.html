@@ -1,39 +1,135 @@
 {% extends 'base.html' %}
 {% block title %} | Entrence exam {% endblock %}
-{% block content %}
-<ul>
-    <li>CAT</li>
-    <li>MAT</li>
-    <li>TANCET</li>
-    <li>GRE</li>
-</ul>
-
-<div class="forms">
-    <form action="{% url 'forms' %}" method="post" autocomplete="off">{% csrf_token %}
-        <label for="name">Name *</label>
-        <input type="text" name="name" id="name" required>
-        <label for="mail">Email *</label>
-        <input type="email" name="email" id="mail">
-        <label for="phone">Phone</label>
-        <input type="text" name="phone" id="phone">
-        <label for="place">Place</label>
-        <input type="text" name="place" id="place">
-        <label for="course">Course</label>
-        <select name="course" id="course" required>
-            <option value="">Select course *</option>
-            <option value="CAT">CAT</option>
-            <option value="MAT">MAT</option>
-            <option value="TANCET">TANCET</option>
-            <option value="GRE">GRE</option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
-    {% if messages %}
-        {% for message in messages %}
-            <div style="color: rgb(41, 206, 41);">{{message}}</div>
-        {% endfor %}
-    {% endif %}
+{% block content %}<div class="cat0">
+    <h1>Enternce Exams<hr class="catline"></h1>        
+    <ul>
+        <li class="catanime1"><a href="#cat">Common Admission Test</a></li>
+        <li class="catanime1"><a href="#mat">Management Aptitude Test</a></li>
+        <li class="catanime1"><a href="#tancet">TANCET</a> </li>
+        <li class="catanime1"><a href="#gre">Graduate Record Examinations</a></li>
+    </ul>
+</div> 
+<div class="cat1" id="cat">
+    <h1>Common Admission Test (CAT)</h1>
+    <div class="cat-para">
+        <h2>What is CAT ?</h2>
+        <p>Common Admission Test or CAT exam is a common aptitude test that is a gateway to 20 IIMs and over 1,200 B-schools in India. CAT is conducted by the IIMs on a rotational basis. Last year, the exam was conducted by IIM Indore. The CAT question paper comprises MCQs & non-MCQs from Verbal Ability & Reading Comprehension (VARC), Data Interpretation & Logical Reasoning (DILR), and Quantitative Ability (QA). Over two lakh candidates appear in the CAT exam every year. For CAT 2020, about 2.30 lakh applications were received and the total number of candidates who took the test was 1.90 lakh.</p>
+    </div>
 </div>
+<div class="cat2">
+    <div class="cat-why">
+        <h2>Why choose Nivedita Academy ?</h2>
+        <ul>
+            <li><i class="fa fa-arrow-right"></i> Excellence In coaching</li>
+            <li><i class="fa fa-arrow-right"></i> Test Preparation</li>
+            <li><i class="fa fa-arrow-right"></i> Mock test</li>
+            <li><i class="fa fa-arrow-right"></i> Book Material</li>
+            <li><i class="fa fa-arrow-right"></i> Online Test Practice</li>
+        </ul>
+        <p class="cat-why0"><span>CAT Coaching:</span> CAT Coaching Centres, Class Room Coaching, Top CAT Coaching Institutes CAT Exam requires smart and intensive preparation. The CAT coaching institutes help you to prepare for CAT systematically without deviating from your preparation path. The wastage of time is minimized with optimum preparation utilization.</p>
+        <div class="cat-why1">
+            <p>Peer learning in CAT class room coaching is a great advantage while preparing for CAT. CAT coaching centres help you not only in scoring high in the exam but they also help you to take the CAT exam with ease and without stress. Online Coaching Course for CAT 2021.</p>
+            <p>Best Online CAT Preparation Course to Crack CAT 2021. Start Your Preparation Today! Join the simplest online coaching for CAT, MBA entrance exams. Practice actual mock tests for free of charge and obtain shortcut tips and tricks from IIT-IIM alumni. CAT Coaching online course for CAT 2021 Exam Preparation.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<section class="mat0" id="mat">
+    <h1>Management Aptitude Test (MAT)</h1>
+    <div class="what-mat">
+        <h2>What is MAT</h2>
+        <p>MAT stands for Management Aptitude Test. It is a national level exam conducted by All India Management Association (AIMA) for admission in Management courses in colleges in India. MAT score is accepted in over 600 colleges in India and the test is held four times in a year i.e. February, May, September, and December.05-Feb-2019. </p>
+    </div>
+    <div class="def-mat">
+        <h2>Management Aptitude Test</h2>
+        <p class="mat-p1">Management Aptitude Test (MAT) is a standardized test being administered since 1988 to facilitate Business Schools (B-Schools) to screen candidates for admission to MBA and allied programs in about 600 B-Schools across India. Eligibility: Graduates in any discipline and final year students of Graduate Courses can apply.</p>
+       <div class="mat-div1">
+            <p>Mode of Test</p>
+            <ul>
+                <li>Paper-Based Test (PBT) or</li>
+                <li>Computer Based Test (CBT) or</li>
+                <li>Both PBT & CBT</li>
+            </ul>
+       </div>
+        <div class="mat-div2">
+            <p>Note:</p>
+            <ul>
+                <li>Candidate can opt for both the tests i.e. PBT and CBT by paying an extra fee of  1100/- in addition to  1550/-.</li>
+                <li>Candidates opting for both PBT and CBT will have the benefit of selecting additional 2 Management Institutes for sending their scores in addition to the existing option of selecting 5 Management Institutes i.e. they can select 10 Management Institutes in total</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
+<hr>
+
+<section class="tancet" id="tancet">
+    <h1>TANCET</h1>
+    <div class="tan-def">
+        <h2>What is TANCET ?</h2>
+        <p>TANCET is organized by Anna University, Chennai on behalf of the Tamil Nadu Government, for admission in postgraduate programs in the field of management, engineering, architecture and computer science.</p>
+    </div>
+    <div class="tancet-list">
+        <ul>
+            <li>TANCET is Tamil Nadu Common Entrance Test for the examinations in MCA, MBA, M.E, M.Tech, M.Arch and M.Plan. This is the qualification test for the examinations offered by Anna University and other Government Engineering College in Tamilnadu. This is led by Anna University.</li>
+            <li>Not many other Private Colleges and Self-Finance schools likewise recognize this test for their confirmation. The understudies concentrating in the last year degree and last semester in the qualified courses for these investigations can apply.</li>
+        </ul>
+        <p><span>Test Name: </span>Tamil Nadu Common Entrance Test</p>
+        <p><span>Generally called as: </span>TANCET</p>
+        <p><span>Directing Institute: </span>Anna University</p>
+        <p><span>About TANCET: </span>Admissions to the M.Tech. Projects offered at University Departments/University Colleges of Anna University, Government and Government Aided Engineering Colleges and Arts and Science Colleges and Self-financing Colleges (Engineering, Arts and Science Colleges including independent Institutions) in Tamilnadu will be through the TANCET test directed by Anna University</p>
+        <div>
+            <p>TANCET 2015 Eligibility Criteria:</p>
+            <ul>
+                <li>For M. Tech/M.E - The competitor more likely than not passed any of the accompanying with a total of half (45% in the event of SC/ST up-and-comers) B.Tech/B.E in the individual pupil MCA (3 years) after 10+2+3 years four year college education.</li>
+                <li>MCA Lateral Entry (2 years) after 10+2+3 years degree in BCA or B.Sc. (Software engineering/InformationTechnology) Graduate degree in the significant part of Science/Arts, M.Sc. (5 years) Integrated Degree Program.</li>
+                <li>B.Sc. 3 years (Computer Science/Information Technology) and M.Sc. 2 years (Computer Science/Information Technology)</li>
+                <li>B.Pharm. /B.Sc (Agri. /Forestry/Horticulture/Fishery)</li>
+                <li>TANCET 2015 Exam Pattern: The inquiry paper includes three sections with Part 1 and 2 being necessary while Part 3 will be on the separate picked discipline/subject</li>
+            </ul>
+        </div>
+
+        <p>Mandatory:</p>
+        <dl>
+            <dt>Section 1:</dt>
+            <dd>30 inquiries with 1 imprint for each right answer</dd>
+            <dt>Section 2:</dt>
+            <dd>30 inquiries with 1 imprint for each right answer</dd>
+            <dt>Section 3:</dt>
+            <dd>Candidates must pick a decision of a segment out of 14 dependent on region of specialization and answer 40 Questions with 1 imprint for each right answer</dd>
+        </dl>
+    </div>
+</section>
+
+<hr>
+<div class="enform0">
+    <div class="enform1">
+        <form action="{% url 'forms' %}" method="post" autocomplete="off">
+            {% csrf_token %}
+            <label for="name">Name *</label>
+            <input type="text" name="name" id="name" required>
+            <label for="mail">Email *</label>
+            <input type="email" name="email" id="mail">
+            <label for="phone">Phone *</label>
+            <input type="text" name="phone" id="phone">
+            <label for="place">Place</label>
+            <input type="text" name="place" id="place">
+            <label for="course">Course</label>
+            <select name="course" id="course" required>
+                <option value="">Select course *</option>
+                <option value="CAT">CAT</option>
+                <option value="MAT">MAT</option>
+                <option value="TANCET">TANCET</option>
+                <option value="GRE">GRE</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        {% if messages %}
+            {% for message in messages %}
+                <div style="color: rgb(41, 206, 41);">{{message}}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
 
 {% endblock %}

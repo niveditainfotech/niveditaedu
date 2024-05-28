@@ -9,6 +9,11 @@
     cursor: url("images/pencil.png"),auto;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 ::selection{
     background-color: var(--gray);
     color: var(--light)
@@ -942,3 +947,799 @@ footer p,a{
 }
 
 /* ----------------- */
+
+/* Entrence */
+
+.cat0{
+    width: 99vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./images/cat.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.catline{
+    width: 100%;
+    margin: 2px auto;
+    transform: rotate(90deg);
+    position: relative;
+    left: 60%;
+}
+
+.cat0 h1{
+    font-size: 42px;
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.cat0 ul{
+    color: white;
+    font-size: 42px;
+}
+
+.cat0 ul li{
+    list-style: none;
+    position: relative;
+    line-height: 1.5;
+    left: 3%;
+    margin: 20px;
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+.catanime1{
+    animation: catShow .5s linear forwards;
+}
+
+.cat0 ul li:nth-child(1){
+    animation-delay: .5s;
+}
+.cat0 ul li:nth-child(2){
+    animation-delay: .8s;
+}
+.cat0 ul li:nth-child(3){
+    animation-delay: 1s;
+}
+.cat0 ul li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+@keyframes catShow {
+    100%{        
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/* --------------- */
+
+
+/* CAT */
+
+
+.cat1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    height: 30vh;
+    width: 93vw;
+    margin-bottom: 80px;
+    
+}
+
+.cat1 h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.cat-para{    
+    padding: 2%;
+    border-radius: 10px;
+    background-color: var(--light);
+}
+.cat-para h2{
+    margin: 10px auto;
+    color: var(--dark);
+
+}
+.cat-para p{
+    text-align: justify;
+    text-indent: 5%;
+    line-height: 1.5;
+}
+
+.cat2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 99vw;
+    margin-bottom: 80px;
+}
+
+.cat-why{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.cat-why h2{
+    color: var(--dark);
+    margin: 10px auto;
+}
+
+.cat-why ul{
+    margin: 10px auto;
+    line-height: 2;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.cat-why ul i{
+    color: var(--dark);
+}
+
+.cat-why0{
+    margin: 10px auto;
+    padding: 13px;
+    background-color: var(--light);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.cat-why0 span{
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.cat-why1{
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.cat-why1 p:first-child{
+    margin-bottom: 2.5%;
+    text-indent: 3%;
+}
+
+.cat-why1 p:last-child{
+    text-indent: 3%;
+}
+
+/* --------------- */
+
+/* MAT */
+
+
+.mat0{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    margin-top: 3%;
+}
+
+.mat0 h1{
+    text-align: center;
+    color: var(--dark);
+    margin-top: 10px;
+}
+
+.what-mat{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--light);
+}
+
+.what-mat h2{
+    margin: 10px;
+    color: var(--dark);
+}
+
+.what-mat p{
+    text-indent: 3%;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.def-mat{
+    display: flex;
+    flex-direction: column;
+}
+
+.def-mat h2{
+    margin-left: 20px;
+    color: var(--dark);
+}
+
+.mat-p1{
+    margin: 20px;
+    line-height: 1.5;
+    text-indent: 3%;
+}
+
+.mat-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mat-div1 p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.mat-div1 ul{
+    margin-left: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.mat-div2{
+    width: 90%;
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.mat-div2 p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.mat-div2 ul{
+    line-height: 1.5;
+    font-size: 17px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* ------------------ */
+
+
+/* TANCET */
+
+.tancet{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+}
+
+.tancet h1{
+    text-align: center;
+    color: var(--dark);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tan-def{
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--light);
+    line-height: 1.5;
+    box-shadow: 0 0 8px var(--light);
+}
+
+.tan-def h2{
+    color: var(--dark);
+}
+
+.tan-def p{
+    text-indent: 3%;
+}
+
+.tancet-list ul{
+    margin: 0 80px 40px;
+    line-height: 1.5;
+}
+
+.tancet-list ul li{
+    margin: 10px 0;
+}
+
+.tancet-list p{
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.tancet-list p span{
+    font-weight: bold;
+    color: var(--gray);
+}
+
+.tancet-list div{
+    box-shadow: 0 0 6px gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tancet-list div p{
+    color: var(--gray);
+}
+
+.tancet-list dl{
+    margin-bottom: 20px;
+}
+
+.tancet-list dl dt{
+    margin: 10px 20px;
+    background-color: var(--dark);
+    color: var(--light);
+    width: fit-content;
+    padding: 3px;
+}
+
+.tancet-list dl dd{
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+.enform0{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enform1{
+    background-image: url("./images/bgs3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.enform1 form{
+    width: 60%;
+    height: 90%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 7px gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.enform1 label{
+    margin: 5px auto;
+    color: var(--dark);
+}
+
+.enform1 input, .enform1 select {
+    width: 60%;
+    height: 30px;
+    border: .1px solid var(--dark);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 4px;
+    color: var(--dark);
+}
+
+.enform1 button{
+    margin: auto;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    margin-bottom: 15px;
+    color: var(--light);
+    background: linear-gradient(90deg, var(--dark), var(--gray));
+    transition: .5s linear;
+}
+
+.enform1 button:hover{
+    box-shadow: 0 0 5px var(--dark);
+    transition: .5s linear;
+}
+
+/* ---------------- */
+
+
+/* Abroad studies */
+
+.engmain{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(235deg, rgba(155, 48, 48, 0.5),rgba(0,0,0,0.5)),url("./images/pexels-abby-chung-1106468.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;    
+}
+
+.engban-l{
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+}
+.engban-l h2, .engban-l h3{
+    text-transform: uppercase;
+}
+
+.engban-l h2{
+    margin-bottom: 2px;
+    font-size: 62px;
+    font-weight: 700;
+    background-image: url("./images/pexels-monstera-production-7412094.jpg");
+    background-clip: text;
+    background-size: contain;
+    color: transparent;
+}
+
+.engban-l h3{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.engban-l .p1{
+    margin-top: 7%;
+    line-height: 2;    
+}
+
+.engban-l .p2{
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.engsec2{
+    padding: 20px 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.engh2{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+.engcon{
+    display: flex;
+    margin-top: 20px;
+}
+
+.sec2-r{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.engcon2{
+    border-radius: 10px;
+    background-color: white;
+    margin-right: 20px;
+    box-shadow: 1px 1px 7px 1px gray;
+    height: 80vh;
+}
+
+.engcon2 h3{
+    text-align: center;
+    margin: 20px auto;
+    width: 40vw;
+    color: rgb(55, 174, 211);
+}
+
+.engcon2 ul{
+    padding: 1px 10%;
+}
+
+.engcon2 ul li{
+    margin: 30px 2px;
+    line-height: 2;
+    list-style: linear-gradient(rgb(55, 174, 211),rgb(55, 174, 211));
+}
+
+.engcon2 a button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #1CB5E0 0%, #000851 100%);
+    color: white;
+    transition: .5s linear;
+}
+
+.engcon2 a button:hover{
+    transition: .5s linear;
+    box-shadow: 0 0 10px var(--dark);
+}
+
+.sec2-l{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    width: 40vw;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./images/pexels-samarth-singhai-1010079.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+}
+.deform h3{
+    margin: 20px auto;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.deform form{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.deform form label{
+    margin: 10px 0;
+}
+
+.deform form input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.ops{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.deform form button{
+    background-color: white;
+    margin: 30px auto;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.deform form button:hover{
+    background-color: black;
+    color: white;
+}
+
+.engsec3{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("./images/v915-wit-002.jpg"); 
+    background-position: center;
+    background-size: cover;
+}
+
+.sec3-l,.sec3-r{
+    width: 50%;
+    
+}
+
+.sec3div1{
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 10px;
+    margin: auto 30px;
+    min-height: 80%;
+    line-height: 2;
+}
+
+.sec3div1 h4{
+    color: rgb(87, 155, 175);
+}
+
+.sec3div1 h3{
+    margin-top: 20px;
+    color: rgb(55, 174, 211);
+}
+
+.sec3div2{
+    line-height: 3.5;
+}
+
+
+.engrid{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7%;
+    flex-wrap: wrap;
+}
+
+.engrid img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.engrid p{
+    border: 1px solid rgb(0, 183, 255);
+    border-radius: 10px;
+    width: 40%;
+    margin: 30px 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.absec{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top,rgba(255,255,255,.8),rgba(255,255,255,.8)), url("./images/hands-waving-flags-china-germany-india-south-africa-russia.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.absec h2{
+    text-transform: uppercase;
+    margin: 20px;
+    /* color: rgb(11, 130, 199); */
+    color: var(--dark);
+}
+
+.abdiv{
+    display: flex;
+    height: 65vh;
+    transition: .5s linear;
+}
+
+.abdiv1{
+    background-color: white;
+    width: 50%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px gray;
+}
+
+.abdiv1 p{
+    text-align: center;
+    margin: 10px;
+}
+.abdiv1 span{
+    color: var(--gray);
+}
+.abdiv1 img{
+    width: 250px;
+}
+
+.abdiv2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/notebook-blue-wood-table.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 600px;
+    width: 50%;
+    position: relative;
+    text-shadow: 5px 8px 10px gray;
+}
+
+.abdiv2 p{
+    margin: 20px ;
+}
+
+.abdiv2 ul li{
+    margin-left: 10px;
+    line-height: 2;
+}
+
+.abp{
+    position: relative;
+    text-align: center;
+    top: 5%;
+    box-shadow: 0 0 3px gray;
+    border-radius: 5px;
+    left: 4%;
+    width: 90vw;
+    line-height: 1.5;
+    background-color: white;
+    padding: 10px;
+}
+
+.abp span{
+    color: var(--gray);
+}
+
+.iesec{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.iebox1{
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px 2px gray;
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.iebox1 h3{
+    transition: .5s;
+    /* color: rgba(155, 48, 48); */
+    color: var(--dark);
+}
+
+.iebox1 p{
+    text-indent: 30px;
+    margin: 10px;
+    line-height: 1.5;
+}
+/* ------------- */
+
