@@ -10,7 +10,6 @@ function show(){
     console.log("Test")
 }
 
-console.log("Test");
 
 let preloader=document.querySelector("[data-preaload]")
 
