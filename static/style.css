@@ -93,6 +93,7 @@ a{
 nav{
     background-color: var(--dark);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    z-index: 12;
 }
 
 nav ul{
@@ -123,14 +124,16 @@ nav a:hover{
 nav li:first-child{
     margin-right: auto;
 }
+
 .side-bar{
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 100vh;
-    z-index: 99999;
-    background-color: rgba(255,255,255,0.8);
+    z-index: 1;
+    /* background-color: rgba(255,255,255,0.8); */
+    background-color: red;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
@@ -139,11 +142,12 @@ nav li:first-child{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    
 }
 
 .side-bar li{
     width: 100%;
-    z-index: 999999;
+    
     
 }
 
@@ -167,15 +171,13 @@ nav li:first-child{
     }
 
     .mnav{
-        display: block;
-        z-index: 99999;
+        display: block;       
     }
 }
 
 @media screen and (max-width:400px) {
     .side-bar{
         width: 100%;
-        z-index: 99999;
     }
 }
 /* ---------------- */
@@ -1381,7 +1383,6 @@ footer p,a{
 /* Abroad studies */
 
 .engmain{
-    z-index: 3;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(235deg, rgba(155, 48, 48, 0.5),rgba(0,0,0,0.5)),url("./images/pexels-abby-chung-1106468.jpg");
@@ -1391,7 +1392,6 @@ footer p,a{
 }
 
 .engban-l{
-    z-index: 0;
     backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;
@@ -1998,11 +1998,7 @@ footer p,a{
         z-index: -10;
     }
     .engban-l{
-        backdrop-filter: blur(0);
-        z-index: 0;
-    }
-    .bandiv{
-        
+        backdrop-filter: blur(0);       
     }
     .engban-l h2{
         margin-bottom: 2px;
