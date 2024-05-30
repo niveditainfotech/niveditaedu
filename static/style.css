@@ -129,7 +129,7 @@ nav li:first-child{
     right: 0;
     height: 100vh;
     width: 100vh;
-    z-index: 999;
+    z-index: 99999;
     background-color: rgba(255,255,255,0.8);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
@@ -143,6 +143,7 @@ nav li:first-child{
 
 .side-bar li{
     width: 100%;
+    z-index: 999999;
     
 }
 
@@ -167,12 +168,14 @@ nav li:first-child{
 
     .mnav{
         display: block;
+        z-index: 99999;
     }
 }
 
 @media screen and (max-width:400px) {
     .side-bar{
         width: 100%;
+        z-index: 99999;
     }
 }
 /* ---------------- */
@@ -953,6 +956,7 @@ footer p,a{
 .cat0{
     width: 99vw;
     height: 100vh;
+    z-index: -9999;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./images/cat.jpg");
     background-position: center;
     background-size: cover;
@@ -1377,6 +1381,7 @@ footer p,a{
 /* Abroad studies */
 
 .engmain{
+    z-index: 3;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(235deg, rgba(155, 48, 48, 0.5),rgba(0,0,0,0.5)),url("./images/pexels-abby-chung-1106468.jpg");
@@ -1386,6 +1391,7 @@ footer p,a{
 }
 
 .engban-l{
+    z-index: 0;
     backdrop-filter: blur(3px);
     display: flex;
     flex-direction: column;
@@ -1558,18 +1564,16 @@ footer p,a{
 }
 
 .engsec3{
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    background-image: url("./images/v915-wit-002.jpg"); 
+    background-image: url("./images/v915-wit-002.jpg");    
     background-position: center;
     background-size: cover;
 }
 
 .sec3-l,.sec3-r{
-    width: 50%;
-    
+    width: 50%;    
 }
 
 .sec3div1{
@@ -1582,7 +1586,7 @@ footer p,a{
     border: 1px solid rgb(0, 183, 255);
     border-radius: 10px;
     margin: auto 30px;
-    min-height: 80%;
+    height: 100%;
     line-height: 2;
 }
 
@@ -1629,7 +1633,6 @@ footer p,a{
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to top,rgba(255,255,255,.8),rgba(255,255,255,.8)), url("./images/hands-waving-flags-china-germany-india-south-africa-russia.jpg");
@@ -1640,7 +1643,6 @@ footer p,a{
 .absec h2{
     text-transform: uppercase;
     margin: 20px;
-    /* color: rgb(11, 130, 199); */
     color: var(--dark);
 }
 
@@ -1921,6 +1923,170 @@ footer p,a{
         font-size: 3em;
         letter-spacing: 10px;
     }
+    .about{
+        height: 110vh;
+        z-index: -3;
+    }
+    .about-box{
+        width: 93%;
+    }
+    .about2{
+        height: fit-content;
+    }
+    .catline{
+        display: none;
+    }
+    .cat0 ul{
+        z-index: 0;
+        font-size: 38px;
+    }
+    .cat0 ul li{
+        list-style: circle;
+    }
+    .cat1, .cat2, .cat3{
+        height: fit-content;
+    }
+    .mat0{
+        height: fit-content;
+    }
+    .tancet-list ul{
+        margin: 15px;
+    }
+    .tancet-list div{
+        width: 85%;
+    }
+    .enform1{
+        width: 100%;
+    }
+    .enform1 form{
+        width: 90%;
+    }
+    .enform1 input, .enform1 select{
+        width: 80%;
+    }
+    .conform-o{
+        z-index: -11;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .conform{
+        width: 95%;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .conform-l{
+        width: 100%;
+        padding: 0;
+    }
+    .addr{
+        width: 100%;
+    }
+    .addr-1{
+        flex-direction: column;
+    }
+    .iframe{
+        width: 100%;
+    }
+    .conform form{
+        width: 100%;
+    }
+    .conform input, .conform .textareas{
+        width: 100%;
+    }
+    .engmain{
+        z-index: -10;
+    }
+    .engban-l{
+        backdrop-filter: blur(0);
+        z-index: 0;
+    }
+    .bandiv{
+        
+    }
+    .engban-l h2{
+        margin-bottom: 2px;
+        -webkit-background-clip: text;
+    }
+    .engsec2{
+        height: fit-content;
+    }
+    .engcon{
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .engcon2{
+        margin-left: 20px;
+    }
+    .engcon2 h3{
+        width: 90vw;
+    }
+    .sec2{
+        position: relative;
+        left: 10%;
+    }
+    .sec2-r, .sec2-l{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
 
-
+    .deform{
+        width: 90vw;
+    }
+    .deform form input{
+        margin-bottom: 20px;
+    }
+    .deform form{
+        width: 80vw;
+        height: 90%;
+    }
+    .engsec3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        background-color: yellow;
+        padding: 10px ;
+    }
+    .sec3-l,.sec3-r{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .sec3div1{
+        position: relative;
+        top: 0%;
+        width: 90%;
+        margin: 20px;
+    }
+    .engrid p{
+        width: 90%;
+    }
+    .sec3div1 h3{
+        text-align: center;
+    }
+    .absec{
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .abdiv{
+        height: fit-content;
+        width: 100vw;
+        flex-direction: column;
+    }
+    .absec h2{
+        text-align: center;
+    }
+    .abdiv1,.abdiv2{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .abdiv2{
+        margin-left: 20px;
+    }
 }
