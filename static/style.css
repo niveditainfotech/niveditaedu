@@ -73,6 +73,7 @@ a{
     animation: anime2 linear forwards;
     /* animation-delay: 2s; */
     animation-duration: 1s;
+    z-index: 100;
 }
 
 @keyframes anime2 {
@@ -93,7 +94,6 @@ a{
 nav{
     background-color: var(--dark);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-    z-index: 12;
 }
 
 nav ul{
@@ -131,9 +131,8 @@ nav li:first-child{
     right: 0;
     height: 100vh;
     width: 100vh;
-    z-index: 1;
-    /* background-color: rgba(255,255,255,0.8); */
-    background-color: red;
+    z-index: 9999;
+    background-color: rgba(255,255,255,0.4);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
@@ -147,8 +146,6 @@ nav li:first-child{
 
 .side-bar li{
     width: 100%;
-    
-    
 }
 
 .side-bar a{
@@ -180,6 +177,7 @@ nav li:first-child{
         width: 100%;
     }
 }
+
 /* ---------------- */
 
 
@@ -1381,24 +1379,24 @@ footer p,a{
 
 
 /* Abroad studies */
-
+.engban-l{
+    backdrop-filter: blur(3px);
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+}
 .engmain{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(235deg, rgba(155, 48, 48, 0.5),rgba(0,0,0,0.5)),url("./images/pexels-abby-chung-1106468.jpg");
     background-position: center;
     background-size: cover;
-    display: flex;    
-}
-
-.engban-l{
-    backdrop-filter: blur(3px);
     display: flex;
-    flex-direction: column;
-    color: white;
-    justify-content: center;
-    width: 100vw;
-    text-align: center;
+    z-index: -99;   
 }
 .engban-l h2, .engban-l h3{
     text-transform: uppercase;
@@ -1995,10 +1993,14 @@ footer p,a{
         width: 100%;
     }
     .engmain{
-        z-index: -10;
+        background: transparent;
     }
     .engban-l{
-        backdrop-filter: blur(0);       
+        backdrop-filter: blur(0);
+        background: linear-gradient(235deg, rgba(155, 48, 48, 0.5),rgba(0,0,0,0.5)),url("./images/pexels-abby-chung-1106468.jpg");
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
     }
     .engban-l h2{
         margin-bottom: 2px;
@@ -2046,7 +2048,6 @@ footer p,a{
         position: relative;
         top: 0;
         bottom: 0;
-        background-color: yellow;
         padding: 10px ;
     }
     .sec3-l,.sec3-r{

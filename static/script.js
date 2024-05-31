@@ -7,7 +7,6 @@ function show(){
     const bar = document.querySelector(".side-bar");
     bar.style.display='none'
     bar.style.transition='.5s'
-    console.log("Test")
 }
 
 
