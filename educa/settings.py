@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -78,10 +79,10 @@ WSGI_APPLICATION = 'educa.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "django",
-        "USER": "root",
-        "PASSWORD": "anas",
-        "HOST": "127.0.0.1",
+        "NAME": "newacademy",
+        "USER": "nivedita",
+        "PASSWORD": "Nivedita@123",
+        "HOST": "43.255.154.41",
         "PORT": "3306",
     }
 }
