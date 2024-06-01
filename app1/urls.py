@@ -7,7 +7,7 @@ urlpatterns=[
     path('english/',views.english,name='english'),
     path('compotetive/',views.compotetive,name='compo'),
     path('entrence/',views.entrence,name='entrences'),
-    path('adoutus/',views.about,name='abouts'),
+    path('aboutus/',views.about,name='abouts'),
     path('contact/',views.conatct,name='contacts'),
     path('form/',views.contactform,name='forms'),
 ]

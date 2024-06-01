@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nivedita Academy {% block title %}{% endblock %}</title>
-    <link rel="shortcut icon" href="../static/images/bcakround.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/images/fav.jpeg" width="20px">
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
@@ -28,7 +28,7 @@
             <li><a class="mnav" href="{% url 'contacts' %}">Contact</a></li>
         </ul>
         <ul class="anime2">
-            <li class="hide"><a href="{% url 'home' %}">Logo</a></li>
+            <li class="hide"><a href="{% url 'home' %}"><img src="{% static 'images/logo.jpeg' %}" alt=""></a></li>
             <li class="hide"><a href="{% url 'home' %}">Home</a></li>
             <li class="hide"><a href="{% url 'english' %}">Abroad Study</a></li>
             <li class="hide"><a href="{% url 'compo' %}">Competitive Exams</a></li>

@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-r4%gf29jrgdzj)1fe+ldz+(7)xo_87ao%cr=a)khjlgwj6^**l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.102.149"]
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ["192.168.1.10"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -76,9 +76,13 @@ WSGI_APPLICATION = 'educa.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "django",
+        "USER": "root",
+        "PASSWORD": "anas",
+        "HOST": "127.0.0.1",
+        "PORT": "3306",
     }
 }
 
@@ -120,7 +124,10 @@ USE_TZ = True
 STATIC_DIR=BASE_DIR.joinpath("static")
 
 STATIC_URL = 'static/'
+
 STATICFILES_DIRS= [STATIC_DIR]
+
+STATIC_ROOT=BASE_DIR/"staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

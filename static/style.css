@@ -108,6 +108,11 @@ nav li{
     height: 50px;
 }
 
+nav img{
+    width: 150px;
+
+}
+
 nav a{
     height: 100%;
     padding: 0 30px;
